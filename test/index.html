@@ -30,8 +30,8 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-mobile-warning"; style="color: #FFFFFF;">
-        WebGL builds are not supported on mobile devices.
+     <!--  <div id="unity-mobile-warning";>     style="color: #FFFFFF;"  
+        WebGL builds are not supported on mobile devices.  -->
       </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
@@ -57,7 +57,7 @@
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-      var mobileWarning = document.querySelector("#unity-mobile-warning");
+ <!-- var mobileWarning = document.querySelector("#unity-mobile-warning"); -->
 
       // By default Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
@@ -71,10 +71,10 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        mobileWarning.style.display = "block";
+  <!--  mobileWarning.style.display = "block";
         setTimeout(() => {
-          mobileWarning.style.display = "none";
-        }, 5000);
+        mobileWarning.style.display = "none";
+        }, 5000);  -->
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
