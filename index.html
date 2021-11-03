@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <!-- viewport setting-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=2.0, minimum-scale=0.3, user-scalable=yes,target-densitydpi=medium-dpi">
+
     <title>Unity WebGL Player | practice</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
@@ -26,6 +30,11 @@
       </div>
     </div>
     <script>
+      // webview setting
+		  WebSettings wsetting = m_webView.getSettings();
+		  wsetting.setBuiltInZoomControls(true);
+      wsetting.setSupportZoom(true);
+      
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/build_temp.loader.js";
       var config = {
