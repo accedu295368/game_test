@@ -73,9 +73,9 @@
         config.devicePixelRatio = 1;
         mobileWarning.style.display = "block";
         setTimeout(() => {
-        mobileWarning.style.display = "none";
-        }, 5000);  
-      } else {                       
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
@@ -83,7 +83,7 @@
 
       var script = document.createElement("script");
       script.src = loaderUrl;
-      sczript.onload = () => {
+      script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
