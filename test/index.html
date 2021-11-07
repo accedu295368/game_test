@@ -25,6 +25,15 @@
         <div id="unity-build-title">practice</div>
       </div>
     </div>
+    <scrirpt>
+      $('body').bind('orientationchange',function(event){
+	if (event.orientation == "portrait") {
+		//세로
+	} else if (event.orientation == "landscape") { 
+		//가로
+	}
+}) 
+     </script>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/build_eat.loader.js";
