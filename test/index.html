@@ -26,6 +26,13 @@
         <div id="unity-build-title">practice</div>
       </div>
     </div>
+    <script language="JavaScript">
+WebSettings wsetting = m_webView.getSettings();
+
+wsetting.setBuiltInZoomControls(true);
+wsetting.setSupportZoom(true);
+
+</script>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/build_eat.loader.js";
