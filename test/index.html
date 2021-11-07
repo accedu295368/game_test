@@ -25,18 +25,12 @@
         <div id="unity-build-title">practice</div>
       </div>
     </div>
-    <style>
-  @media( orientation: portrait ){
-    html {
-      transform: rotate(-90deg);
-      transform-origin: top left;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100vh;
-      height: 100vw;
-    }
-  }
+<style>
+ -webkit-transform: rotate(90deg); /* Safari and Chrome */
+      -moz-transform: rotate(90deg);   /* Firefox */
+      -ms-transform: rotate(90deg);   /* IE 9 */
+      -o-transform: rotate(90deg);   /* Opera */
+      transform: rotate(90deg);
 </style>
     <script>
       var buildUrl = "Build";
