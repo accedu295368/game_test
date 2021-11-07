@@ -25,19 +25,7 @@
         <div id="unity-build-title">practice</div>
       </div>
     </div>
-    <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/build_eat.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/build_eat.data",
-        frameworkUrl: buildUrl + "/build_eat.framework.js",
-        codeUrl: buildUrl + "/build_eat.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "practice",
-        productVersion: "1.0",
-      };
-<style>
+    <style>
   @media( orientation: portrait ){
     html {
       transform: rotate(-90deg);
@@ -50,6 +38,19 @@
     }
   }
 </style>
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/build_eat.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/build_eat.data",
+        frameworkUrl: buildUrl + "/build_eat.framework.js",
+        codeUrl: buildUrl + "/build_eat.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "practice",
+        productVersion: "1.0",
+      };
+      </script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
