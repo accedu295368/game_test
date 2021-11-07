@@ -6,6 +6,14 @@
     <title>Unity WebGL Player | practice</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <!-- 모바일용웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- 안드로이드 홈화면추가시 상단 주소창 제거 -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="/img/favicon.ico">
+<!-- ios홈화면추가시 상단 주소창 제거 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="/img/favicon.ico">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -25,11 +33,6 @@
         <div id="unity-build-title">practice</div>
       </div>
     </div>
-    <script>
-    window.addEventListener('load',function(){
-    setTimeout(scrollTo,0,0,1);
-    },false);
-    </script>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/build_eat.loader.js";
