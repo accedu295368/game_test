@@ -26,11 +26,7 @@
       </div>
     </div>
 	<script>
-	if (window.screen.mozLockOrientation("landscape-primary")) {
-	  // orientation was locked
-	} else {
-	  // orientation lock failed
-	}  
+	screen.orientation.lock('landscape');
 	</script>
     <script>
       var buildUrl = "Build";
