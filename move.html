@@ -2,7 +2,15 @@
   <head>
     <meta http-equiv="refresh" content="0;url=https://accedu295368.github.io/game_test/test/index.html">
   </head>
+
   <script>
-    location.href='intent://accedu295368.github.io/game_test/test/#Intent;scheme=http;package=com.android.chrome;end'
+   var filter = "win16|win32|win64|mac|macintel";
+   if( navigator.platform  )
+     {
+      if( filter.indexOf(navigator.platform.toLowerCase())<0 )
+        {
+         location.href='intent://accedu295368.github.io/game_test/test/#Intent;scheme=http;package=com.android.chrome;end'
+        }
+     }
   </script>
 </html>
